@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>belook</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="img/favicon.png" />
+        <link rel="stylesheet" href="css/libs.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+    </head>
+    <body>
+        <style>
+            /*fonts*/
+            @font-face{font-family:OpenSansSemiBold;src:url(../fonts/OpenSansSemiBold/OpenSansSemiBold.eot);src:url(../OpenSansSemiBold/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix) format("embedded-opentype"),url(../fonts/OpenSansSemiBold/OpenSansSemiBold.woff) format("woff"),url(../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:OpenSansRegular;src:url(../fonts/OpenSansRegular/OpenSansRegular.eot);src:url(../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/OpenSansRegular/OpenSansRegular.woff) format("woff"),url(../fonts/OpenSansRegular/OpenSansRegular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:OpenSansLight;src:url(../fonts/OpenSansLight/OpenSansLight.eot);src:url(../fonts/OpenSansLight/OpenSansLight.eot?#iefix) format("embedded-opentype"),url(../fonts/OpenSansLight/OpenSansLight.woff) format("woff"),url(../fonts/OpenSansLight/OpenSansLight.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:OpenSansBold;src:url(../fonts/OpenSansBold/OpenSansBold.eot);src:url(../fonts/OpenSansBold/OpenSansBold.eot?#iefix) format("embedded-opentype"),url(../fonts/OpenSansBold/OpenSansBold.woff) format("woff"),url(../fonts/OpenSansBold/OpenSansBold.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:OpenSansExtraBold;src:url(../fonts/OpenSansExtraBold/OpenSansExtraBold.eot);src:url(../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix) format("embedded-opentype"),url(../fonts/OpenSansExtraBold/OpenSansExtraBold.woff) format("woff"),url(../fonts/OpenSansExtraBold/OpenSans-ExtraBold.ttf) format("truetype");font-style:normal;font-weight:400};
+            /**/
+            /*media*/
+            @media (max-width :1199px){.stepsItm .left{padding:2.4em 1em 0}}@media (max-width :1199px) and (min-width :992px){.stepsItm .right{background-position-y:-webkit-calc(0% + 64px);background-position-y:calc(0% + 64px)}}@media only screen and (max-width :991px){h1{font-size:50px}h2{font-size:36px}.w1 .points li p{line-height:1.5}.w1 .points li{margin:10px 0}.bigBtn,.w1 .points li p{font-size:18px}.storey2 .custom-row{margin:0}.storey2 .navBar{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;display:none;-webkit-transition:0s;-moz-transition:0s;-ms-transition:0s;-o-transition:0s;transition:0s;position:absolute;left:0;top:40px;width:100%;background:#555;z-index:9999}.storey2 .navBar li{width:100%}.btnMnu{display:block!important}.whyitm{margin-bottom:2em}.whyitm:last-child{margin-bottom:0}.title h2{font-size:32px}.steps{margin-bottom:1.5em}.steps:last-child{margin-bottom:0}}@media (max-width :775px) and (min-width :767px){body{overflow-x:hidden}}@media only screen and (max-width :767px){.ulWrp,.w5 .txtWrp h2,.w5 .txtWrp p,hgroup>*{text-align:center}.btmtxt .title,.btnWrp,footer .row-fl{-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-ms-flex-align:center;align-items:center}span.tag{margin:0}.ulWrp{margin-bottom:1em}.soclink{position:relative;display:inline-block}.soclink li a .fa{position:absolute;left:-25px;margin-top:8px}footer .imgWrp{margin:0 0 1.5em}}@media only screen and (max-width :480px){.storey1>.container>.row-flex{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.imgWrp{text-align:center}.langLog>.pull-right{float:none!important;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.langWrp,.login{padding:.5em;margin-top:10px}.stepsItm .right{max-width:100%;-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%}.stepsItm .right .img{background-position-x:-webkit-calc(100% + 17px);background-position-x:calc(100% + 17px)}}@media only screen and (min-width :992px){.storey2 .navBar{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;display:-webkit-box!important;display:-webkit-flex!important;display:-ms-flexbox!important;display:flex!important}}
+        </style>
+        
+        <header>
+            <div class="storey1">
+                <div class="container">
+                    <div class="row-flex align-center row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="imgWrp">
+                                <img src="img/logo.png" alt="Belook">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 langLog">
+                            <div class="pull-right row-flex">
+                                <div class="langWrp">
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle lang_dd" id="lang_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="lang-en lang" ></span>
+                                            English
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="lang_dd">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="lang-ru lang" ></span>
+                                                    Русский
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="lang-ua lang" ></span>
+                                                    Українська
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="lang-en lang" ></span>
+                                                    English
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="login"><a href="#">Sign In</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="storey2">
+                <div class="container">
+                    <div class="custom-row">
+                        <div class="pull-right">
+                            <div class="btnMnu hidden-lg hidden-md" id="btnMnu">
+                                <span class="menu-global menu-top"></span>
+                                <span class="menu-global menu-middle"></span>
+                                <span class="menu-global menu-bottom"></span>
+                            </div>
+                        </div>
+                        <ul class="row-flex align-center navBar">
+                            <li><a href="#" title="Why Us">Why us</a></li>
+                            <li><a href="#" title="Features">Features</a></li>
+                            <li><a href="#" title="Themes">Themes</a></li>
+                            <li><a href="#" title="Pricing">Pricing</a></li>
+                            <li><a href="#" title="Support">Support</a></li>
+                            <li><a href="#" title="Partners">Partners</a></li>
+                            <li><a href="#" title="Start now">Start now</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="w1 vh90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <hgroup>
+                            <h1>Build your Next Big site</h1>
+                            <h2>Better. Simple. Faster.</h2>
+                        </hgroup>
+                        <div class="text">
+                            <ul class="points">
+                                <li> <p>Use Google's core infrastructure, data analytics and machine learning.</p></li>
+                                <li><p>Secure and fully featured for all enterprises.</p></li>
+                                <li> <p>Committed to open source and industry leading price-performance.</p></li>
+                            </ul>
+                        </div>
+                        <div class="btnWrp row-fl align-start">
+                            <button class="bigBtn yellow">Start now</button><span class="tag white">It`s free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w2 vh50">
+            <div class="container">
+                <div class="row">
+                    <div class="title"><h2>Why BELOOK Platform?</h2></div>
+                    <div class="col-md-4 col-xs-12 whyitm">
+                        <div class="imgWhy">
+                            <img src="img/why1.png" alt="img">
+                        </div>
+                        <div class="txtWhy">
+                            <h3><a href="#" title="Future-Proof Infrastructure">Future-Proof Infrastructure</a></h3>
+                            <p>Secure, global, high-performance, cost-effective and constantly improving. We’ve built our cloud for the long haul.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 whyitm">
+                        <div class="imgWhy">
+                            <img src="img/why2.png" alt="img">
+                        </div>
+                        <div class="txtWhy">
+                            <h3><a href="#" title="Future-Proof Infrastructure">Seriously Powerful Data & Analytics </a></h3>
+                            <p>Tap into big data to find answers faster and build better products.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 whyitm">
+                        <div class="imgWhy">
+                            <img src="img/why3.png" alt="img">
+                        </div>
+                        <div class="txtWhy">
+                            <h3><a href="#" title="Future-Proof Infrastructure">Serverless, Just Code</a></h3>
+                            <p>Grow from prototype to production to planet-scale, without having to think about capacity, reliability or performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w3 vh50">
+            <div class="container">
+                <div class="row">
+                    <div class="title"><h2>Everything You Need To Build And Scale</h2></div>
+                    <div class="row-fl">
+                        <div class="col-md-4 col-xs-12 col-sm-6 whyitm whyitmLftimg">
+                            <div class="imgWhy">
+                                <img src="img/evn1.png" alt="img">
+                            </div>
+                            <div class="txtWhy">
+                                <h3><a href="#" title="Compute">Compute</a></h3>
+                                <p>From virtual machines with proven price/performance advantages to a fully managed app development platform.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 col-sm-6 whyitm whyitmLftimg">
+                            <div class="imgWhy">
+                                <img src="img/evn2.png" alt="img">
+                            </div>
+                            <div class="txtWhy">
+                                <h3><a href="#" title="Storage and Databases Scalable">Storage and Databases Scalable</a></h3>
+                                <p>Scalable, resilient, high performance object storage and databases for your applications.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 col-sm-6 whyitm whyitmLftimg">
+                            <div class="imgWhy">
+                                <img src="img/evn3.png" alt="img">
+                            </div>
+                            <div class="txtWhy">
+                                <h3><a href="#" title="Networking">Networking</a></h3>
+                                <p>State-of-the-art software-defined networking products on Google’s private fiber network.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 col-sm-6 whyitm whyitmLftimg">
+                            <div class="imgWhy">
+                                <img src="img/evn4.png" alt="img">
+                            </div>
+                            <div class="txtWhy">
+                                <h3><a href="#" title="Big Data">Big Data</a></h3>
+                                <p>Fully managed data warehousing, batch and stream processing, data exploration, Hadoop/Spark, and reliable messaging.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 col-sm-6 whyitm whyitmLftimg">
+                            <div class="imgWhy">
+                                <img src="img/evn5.png" alt="img">
+                            </div>
+                            <div class="txtWhy">
+                                <h3><a href="#" title="Internet of Things">Internet of Things</a></h3>
+                                <p>Intelligent IoT platform that unlocks business insights from your global device network.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 col-sm-6 whyitm whyitmLftimg">
+                            <div class="imgWhy">
+                                <img src="img/evn6.png" alt="img">
+                            </div>
+                            <div class="txtWhy">
+                                <h3><a href="#" title="Machine Learning">Machine Learning</a></h3>
+                                <p>Fast, scalable, easy to use ML services. Use our pre-trained models or train custom models on your data.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 col-sm-6 whyitm whyitmLftimg">
+                            <div class="imgWhy">
+                                <img src="img/evn7.png" alt="img">
+                            </div>
+                            <div class="txtWhy">
+                                <h3><a href="#" title="Management Tools">Management Tools</a></h3>
+                                <p>Monitoring, logging, and diagnostics and more, all in an easy to use web management console or mobile app.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 col-sm-6 whyitm whyitmLftimg">
+                            <div class="imgWhy">
+                                <img src="img/evn8.png" alt="img">
+                            </div>
+                            <div class="txtWhy">
+                                <h3><a href="#" title="Developer Tools">Developer Tools</a></h3>
+                                <p>Develop and deploy your applications using our command-line interface and other developer tools.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 col-sm-6 whyitm whyitmLftimg">
+                            <div class="imgWhy">
+                                <img src="img/evn9.png" alt="img">
+                            </div>
+                            <div class="txtWhy">
+                                <h3><a href="#" title="Identity & Security">Identity & Security</a></h3>
+                                <p>Control access and visibility to resources running on a platform protected by Google’s security model.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12">
+
+                            <div class="btnWrp tac mrg row-fl align-start jus-center">
+                                <button class="bigBtn blue">Start now</button><span class="tag yellow">It`s free</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w4">
+            <div class="container">
+                <div class="row">
+                    <div class="title"><h2>It’s Super Easy To Get Started</h2></div>
+                    <div class="row-fl">
+                        <div class="col-md-4 col-sm-12 col-xs-12 steps">
+                            <div class="stepsItm one row-fl">
+                                <div class="left row-cust-fl">
+                                    <h3 class="numb">1</h3>
+                                    <h3 class="text">Select a  Template</h3>
+                                </div>
+                                <div class="right">
+                                    <div class="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 steps">
+                            <div class="stepsItm two row-fl">
+                                <div class="left row-cust-fl">
+                                    <h3 class="numb">2</h3>
+                                    <h3 class="text">Add <br/>Content</h3>
+                                </div>
+                                <div class="right">
+                                    <div class="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 steps">
+                            <div class="stepsItm three row-fl">
+                                <div class="left row-cust-fl">
+                                    <h3 class="numb">3</h3>
+                                    <h3 class="text">Publish Your  Website</h3>
+                                </div>
+                                <div class="right">
+                                    <div class="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w5 vh50">
+            <div class="container">
+                <div class="row">
+                    <div class="txtWrp ">
+                        <div class="title"><h2>You won’t believe how easy this is</h2></div>
+                        <p>Tired of paying a monthly subscription '? Well you can officially cancel your current subscription, as belook.ws.to is completely free & it always will be.</p>
+                        <p>See why webmaster are not happy with belook.ws</p>
+                        <div class="btmtxt">
+                            <div class="title  row-fl align-center"><h2>belook.ws</h2> <span class="tag yellow">getting things done</span></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w6 vh50">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <hgroup>
+                            <h2>Easily Create Beautiful Sites</h2>
+                            <h3>Enter your site name below to create a website</h3>
+                        </hgroup>
+                    </div>
+                    <form action="">
+                        <label class="placeinput">
+                            <input required="1" type="text" id="text" />
+                            <div class="place_holder"><span>mysite</span>.belook.ws</div>
+                        </label>
+                        <button class="bigBtn blue">Create a site</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="w7 footer">
+            <div class="container">
+                <div class="row row-fl">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="ulWrp">
+                            <div class="titleFooter">
+                                <p>Products</p>
+                            </div>
+                            <ul>
+                                <li><a href="#" title="Storage">Storage</a></li>
+                                <li><a href="#" title="Hosting">Hosting</a></li>
+                                <li><a href="#" title="Management tools">Management tools</a></li>
+                                <li><a href="#" title="Identity and Security">Identity and Security</a></li>
+                                <li><a href="#" title="Integrated SMS Solution">Integrated SMS Solution</a></li>
+                                <li><a href="#" title="Integrated Email Marketing">Integrated Email Marketing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="ulWrp">
+                            <div class="titleFooter">
+                                <p>LEARN MORE</p>
+                            </div>
+                            <ul>
+                                <li><a href="#" title="Why Us">Why Us</a></li>
+                                <li><a href="#" title="Pricing">Pricing</a></li>
+                                <li><a href="#" title="Solutions">Solutions</a></li>
+                                <li><a href="#" title="Partners">Partners</a></li>
+                                <li><a href="#" title="Customers">Customers</a></li>
+                                <li><a href="#" title="Support">Support</a></li>
+                                <li><a href="#" title="Careers">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="ulWrp">
+                            <div class="titleFooter">
+                                <p>ENGAGE</p>
+                            </div>
+                            <ul>
+                                <li><a href="#" title="Start for Free">Start for Free</a></li>
+                                <li><a href="#" title="Community">Community</a></li>
+                                <li><a href="#" title="Newsletter">Newsletter</a></li>
+                                <li><a href="#" title="Marketing Training">Marketing Training</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="ulWrp">
+                            <div class="titleFooter">
+                                <p>FOLLOW US</p>
+                            </div>
+                            <ul class="soclink">
+                                <li><a href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                                <li><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                                <li><a href="#" title="Google +"><i class="fa fa-google-plus" aria-hidden="true"></i>Google +</a></li>
+                                <li><a href="#" title="YouTube"><i class="fa fa-youtube-play" aria-hidden="true"></i> YouTube</a></li>
+                                <li><a href="#" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                                <li><a href="#" title="Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i>Pinterest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row row-fl align-center">
+                    <div class="imgWrp">
+                        <img src="img/logofooter.png" alt="Belook">
+                    </div>
+                    <div>
+                        <a href="#" title="Privacy Policy">Privacy Policy</a>
+                        <a href="#" title="Terms of Use">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/libs.min.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+</html>
