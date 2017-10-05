@@ -55,3 +55,6 @@ jQuery(document).ready(function () {
 		return false;
 	});
 });
+/*WOW ANIMATION*/
+   new WOW().init();
+   /**/
