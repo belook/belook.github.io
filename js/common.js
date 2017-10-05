@@ -68,5 +68,5 @@ jQuery(document).ready(function () {
 		});
 		return false;
 	});
-        jQuery("section").animated("fadeInLeft");
+        jQuery("img").animated("fadeInLeft");
 });
