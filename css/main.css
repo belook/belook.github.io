@@ -23,6 +23,12 @@ a {
 a:hover {
     opacity: .8;
 }
+.hidden{
+opacity:0;
+}
+.visible{
+opacity:1;
+}
 img {
   max-width: 100%; }
 
