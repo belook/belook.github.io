@@ -147,6 +147,12 @@ ul {
       color: #fff;
       font-family: "OpenSansSemiBold";
       text-transform: capitalize; }
+    .navBar li:hover{
+        background-color: #fff
+    }
+    .navBar li:hover a{
+        color: #176bcb;
+    }
 
 .btnMnu {
   cursor: pointer;
