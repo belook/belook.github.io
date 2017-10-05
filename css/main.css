@@ -10,11 +10,7 @@
     -o-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
     outline: none !important; }
-  .wow{
-      -vendor-animation-duration: 3s;
-  -vendor-animation-delay: 2s;
-  -vendor-animation-iteration-count: infinite;
-  }
+
 a {
   color: #176bcb; }
 a:hover {
