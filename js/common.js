@@ -54,5 +54,5 @@ jQuery(document).ready(function () {
 		});
 		return false;
 	});
-        $("section").animated("zoomInUp","zoomOutDown");
+        jQuery("section").animated("zoomInUp","zoomOutDown");
 });
