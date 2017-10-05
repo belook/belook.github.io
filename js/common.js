@@ -33,7 +33,21 @@ var Menu = {
 };
 
 Menu.init();
+(function($) {
+	$.fn.animated = function(inEffect) {
+		$(this).each(function() {
+			var ths = $(this);
+			ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
+				if (dir === "down") {
+					ths.addClass(inEffect).css("opacity", "1");
+				};
+			}, {
+				offset: "90%"
+			});
 
+		});
+	};
+})(jQuery);
 jQuery(document).ready(function () {
     
         jQuery('#btnMnu').click(function () {
@@ -54,5 +68,5 @@ jQuery(document).ready(function () {
 		});
 		return false;
 	});
-        jQuery("section").animated("zoomInUp","zoomOutDown");
+        jQuery("section").animated("fadeInLeft");
 });
