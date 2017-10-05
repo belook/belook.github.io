@@ -21,7 +21,7 @@
 a {
   color: #176bcb; }
 a:hover {
-    color: #434a54
+    opacity: .8;
 }
 img {
   max-width: 100%; }
